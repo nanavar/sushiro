@@ -11,7 +11,7 @@
 @font-face {
   font-family: "Gen Jyuu";
   /*a name to be used later*/
-  src: url("/GenJyuuGothic-Monospace-Heavy.woff");
+  src: url("../fonts/GenJyuuGothic-Monospace-Heavy.woff");
   /*URL to font*/
 }
 
