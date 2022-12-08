@@ -193,7 +193,7 @@ header {
     }
 
     .logo {
-      width: 6.7rem;
+      max-width: 6.7rem;
     }
 
     .nav-list {
@@ -481,11 +481,20 @@ nav::before {
 /* FOOTER */
 
 footer {
-  padding: 5rem 0;
+  padding: 5rem 0 2rem 0;
   background-color: #121212;
   color: white;
   text-align: center;
   position: relative;
+
+  .copyright {
+    margin: 20px auto 0 auto;
+    width: 100%;
+
+    a {
+      color: #d8350d;
+    }
+  }
 
   .back-to-top {
     width: 7rem;
@@ -507,7 +516,7 @@ footer {
   }
 
   .footer-content {
-    /* overflow: hidden; */
+    overflow: hidden;
 
     h4 {
       font-size: 2rem;
@@ -563,7 +572,7 @@ footer {
         justify-content: center;
 
         input {
-          width: 80%;
+          width: 100%;
           max-width: 25rem;
           padding: 1rem;
           border-radius: 6rem;
@@ -577,10 +586,7 @@ footer {
           font-size: 1.6rem;
           cursor: pointer;
           padding: 1px 0.6rem;
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          margin-left: 15.5rem;
+          position: relative;
         }
       }
     }
@@ -623,6 +629,10 @@ footer {
   header {
     nav {
       justify-content: space-between;
+
+      .logo {
+        width: 6.7rem;
+      }
 
       .nav-list {
         position: initial;
@@ -760,6 +770,14 @@ footer {
       max-width: 77.5rem;
       margin: auto;
 
+      .copyright {
+        margin: 20px auto;
+
+        a {
+          color: #d8350d;
+        }
+      }
+
       .footer-content-about {
         max-width: 51.3rem;
         margin: 0 auto 5.4rem;
@@ -779,12 +797,38 @@ footer {
 
         .news-form {
           margin: 0;
+
           input {
             width: 100%;
           }
+          .news-container {
+            .news-form {
+              width: 100%;
+              position: relative;
+              display: flex;
+              justify-content: center;
 
-          .news-btn {
-            margin-left: 11rem;
+              input {
+                width: 80%;
+                max-width: 25rem;
+                padding: 1rem;
+                border-radius: 6rem;
+                font-family: var(--body-font);
+              }
+
+              .news-btn {
+                background-color: transparent;
+                border: none;
+                color: var(--secondary-font-color);
+                font-size: 1.6rem;
+                cursor: pointer;
+                padding: 1px 0.6rem;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                margin-left: 15.5rem;
+              }
+            }
           }
         }
       }
